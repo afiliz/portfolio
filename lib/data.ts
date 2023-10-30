@@ -1,6 +1,5 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaPython, FaAmazon } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
@@ -16,16 +15,16 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
     name: "Skills",
     hash: "#skills",
   },
   {
     name: "Experience",
     hash: "#experience",
+  },
+  {
+    name: "Projects",
+    hash: "#projects",
   },
   {
     name: "Contact",
@@ -36,28 +35,36 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Full Stack Software Engineer ",
+    location: "Remote",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Developed data visualization overlays for live tournaments of 30,000+ viewers. Built React-based dashboard used to control what is displayed on livestreams in real time.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Jun '22 - Jan '23",
+  },
+  {
+    title: "Software Development Engineer",
+    location: "Remote/Sunnyvale, CA",
+    description:
+      "Enhanced service for Amazon Alexa designed to promote customer engagement. Led engineering effort to expand service to 2 new markets, improved and maintained the service's backend API and CMS.",
+    icon: React.createElement(FaAmazon),
+    date: "Sep '20 - Oct '21",
+  },
+  {
+    title: "Graduated UC Santa Cruz",
+    location: "Santa Cruz, CA",
+    description:
+      "I graduated UC Santa Cruz with honors, with a BS in Computer Science, and a minor in Bioinformatics.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Jun '20",
+  },
+  {
+    title: "Software Development Intern",
+    location: "Sunnyvale, CA",
+    description:
+      "Created a Python utility that automatically handles firmware updates for company's existing and new network hardware products.",
+    icon: React.createElement(FaPython),
+    date: "Jun '19 - Aug '19",
   },
 ] as const;
 
@@ -86,23 +93,20 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  "Python",
+  "JavaScript",
+  "Java",
+  "React",
+  "TypeScript",
   "HTML",
   "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
   "Next.js",
   "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  "WebSocket",
+  "AWS",
+  "Tailwind CSS",
   "Framer Motion",
+  "three.js",
+  "Figma",
+  "Git"
 ] as const;

@@ -1,10 +1,8 @@
 "use client";
 
-import React, { useEffect } from 'react'
+import React from 'react'
 import SectionHeading from './section-heading'
 import { motion } from "framer-motion";
-import { useInView } from 'react-intersection-observer';
-import { useActiveSectionContext } from '@/context/active-section-context';
 import { useSectionInView } from '@/lib/hooks';
 
 export default function About() {
@@ -12,7 +10,7 @@ export default function About() {
 
   return (
     <motion.section 
-      className='mt-28 mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28'
+      className='mb-20 max-w-[45rem] text-center leading-8 sm:mb-28 scroll-mt-28'
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
@@ -23,10 +21,13 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className='mb-3'>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna eget est lorem ipsum dolor sit amet. Senectus et netus et malesuada fames ac turpis. Quisque sagittis purus sit amet volutpat consequat mauris. Felis eget nunc lobortis mattis aliquam faucibus purus in. Quam viverra orci sagittis eu volutpat. Nibh tortor id aliquet lectus proin nibh nisl. Libero enim sed faucibus turpis in. Molestie nunc non blandit massa enim nec. Quisque non tellus orci ac. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Massa sapien faucibus et molestie. A iaculis at erat pellentesque. Elementum integer enim neque volutpat ac tincidunt vitae semper quis.
+      Hi there! My name is Adam and I enjoy building tech that positively impacts the lives of those who interact with my work. My interest with coding started with video games back in middle school, and I started my coding career by creating a choose-your-own adventure game in C++. I later discovered robotics and the coding aspects of it, and was hooked to programming ever since.
       </p>
-      <p>
-      Sed nisi lacus sed viverra tellus. Platea dictumst quisque sagittis purus sit amet volutpat. Convallis aenean et tortor at risus. Sit amet nisl purus in mollis nunc sed id. Adipiscing tristique risus nec feugiat in. Nunc lobortis mattis aliquam faucibus purus in massa. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Libero nunc consequat interdum varius sit amet. Nunc sed id semper risus. Tincidunt vitae semper quis lectus nulla at volutpat diam. Sit amet massa vitae tortor condimentum lacinia quis vel. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Turpis tincidunt id aliquet risus feugiat in. Nulla facilisi nullam vehicula ipsum a arcu. Habitant morbi tristique senectus et.
+      <p className='mb-3'>
+      Recently I’ve had the opportunity to work at the Esports media company Panda Global, as well as to develop the voice assistant Amazon Alexa. I enjoyed those roles thoroughly, as the work I did brought joy to many customers worldwide. I hope to continue positively impacting customer experiences and growing as a software engineer in my next role.
+      </p>
+      <p className='mb-3'>
+      I’m currently seeking full time and contract software engineering positions based in the San Francisco Bay Area, New York City, Boston, and Los Angeles. Feel free to <a href="#contact" className='underline text-blue-600 hover:text-blue-800 visited:text-purple-600'>message me and get in touch!</a>
       </p>
     </motion.section>
   )

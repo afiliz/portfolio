@@ -1,14 +1,12 @@
 "use client";
 
 import Image from 'next/image'
-import React, { useEffect } from 'react'
+import React from 'react'
 import { motion } from "framer-motion";
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from "react-icons/bs"
 import { HiDownload } from "react-icons/hi"
 import { FaGithubSquare } from 'react-icons/fa';
-import { useInView } from 'react-intersection-observer';
-import { useActiveSectionContext } from '@/context/active-section-context';
 import { useSectionInView } from '@/lib/hooks';
 
 export default function Intro() {
@@ -29,12 +27,12 @@ export default function Intro() {
          >
           <Image
             alt='Adam Filiz portrait'
-            width= '192'
-            height='192'
+            width= '384'
+            height='384'
             quality='95'
             priority={true}
             src='https://www.dropbox.com/scl/fi/08e14mvm8hh3rf8ntcsht/professional_profile.jpg?rlkey=jzsa7t6x67gl5r3s8dgq2t1qg&dl=1'
-            className='h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl'/>
+            className='h-32 w-32 sm:h-36 sm:w-36 rounded-full object-cover border-[0.35rem] border-white shadow-xl'/>
          </motion.div>
           <motion.span
           className='absolute bottom-0 right-0 text-4xl'
@@ -51,14 +49,13 @@ export default function Intro() {
           </motion.span>
         </div>
       </div>
-      <motion.h1 className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
+      <motion.h1 className='mb-10 mt-6 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
       initial={{opacity: 0, y: 100}}
       animate={{opacity: 1, y: 0}}
       >
-        <span className="font-bold">Hello there, I'm Adam.</span> I'm a{" "}
+        Hello there, <span className="font-bold"> I'm Adam.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">2 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. 
+        <span className="font-bold">2 years</span> of experience. I develop <span className="italic">exceptional and impactful</span> <span className="font-bold">sites & apps</span>. 
         {/* My focus is{" "}
         <span className="underline">React, (Next.js)</span>. */}
       </motion.h1>
@@ -76,13 +73,16 @@ export default function Intro() {
 
         <a className='group bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10' href="/Resume.pdf" download>Download Resume <HiDownload className='opacity-60 group-hover:translate-y-1 transition' /></a>
 
-        <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10' href="https://linkedin.com/in/adam-filiz" target="_blank">
-          <BsLinkedin />
-        </a>
+        <div className='flex flex-row gap-3'>
+          <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10' href="https://linkedin.com/in/adam-filiz" target="_blank">
+            <BsLinkedin />
+          </a>
 
-        <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10' href="https://github.com/afiliz" target="_blank">
-          <FaGithubSquare />
-        </a>
+          <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10' href="https://github.com/afiliz" target="_blank">
+            <FaGithubSquare />
+          </a>
+        </div>
+        
       </motion.div>
     </section>
   )

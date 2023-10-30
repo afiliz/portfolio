@@ -1,6 +1,7 @@
 "use client";
 
 import Image from 'next/image'
+import profile from "@/public/professional_profile.jpg";
 import React from 'react'
 import { motion } from "framer-motion";
 import Link from 'next/link';
@@ -31,7 +32,7 @@ export default function Intro() {
             height='384'
             quality='95'
             priority={true}
-            src='https://www.dropbox.com/scl/fi/08e14mvm8hh3rf8ntcsht/professional_profile.jpg?rlkey=jzsa7t6x67gl5r3s8dgq2t1qg&dl=1'
+            src={profile}
             className='h-32 w-32 sm:h-36 sm:w-36 rounded-full object-cover border-[0.35rem] border-white shadow-xl'/>
          </motion.div>
           <motion.span

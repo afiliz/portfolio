@@ -1,17 +1,22 @@
 "use client";
 
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from "framer-motion";
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from "react-icons/bs"
 import { HiDownload } from "react-icons/hi"
 import { FaGithubSquare } from 'react-icons/fa';
+import { useInView } from 'react-intersection-observer';
+import { useActiveSectionContext } from '@/context/active-section-context';
+import { useSectionInView } from '@/lib/hooks';
 
 export default function Intro() {
+  const { ref } = useSectionInView("Home", 0.5);
+
   return (
     // section tags are better to make everything related to each other (semantically)
-    <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
+    <section ref={ref} id="home" className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
       <div className='flex items-center justify-center'>
         <div className='relative'>
          <motion.div
@@ -65,7 +70,7 @@ export default function Intro() {
           delay: 0.1,
         }}
       >
-        <Link href="#contact" className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'>Contact me here
+        <Link href="mailto:filizadam@gmail.com" className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'>Contact me
         <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
         </Link>
 

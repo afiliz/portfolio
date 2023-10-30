@@ -26,7 +26,7 @@ export default function Contact() {
     <motion.section 
       id="contact"
       ref={ref}
-      className='mb-28'
+      className='mb-14 sm:mb-28'
       variants={fadeInAnimationVariants}
       initial="initial"
       whileInView="animate"

@@ -1,9 +1,8 @@
 import React from "react";
 import { FaReact, FaPython, FaAmazon } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import exo from "@/public/exo.png";
+import spotifam from "@/public/spotifam.png";
 
 export const links = [
   {
@@ -46,7 +45,7 @@ export const experiencesData = [
     title: "Software Development Engineer",
     location: "Remote/Sunnyvale, CA",
     description:
-      "Enhanced service for Amazon Alexa designed to promote customer engagement. Led engineering effort to expand service to 2 new markets, improved and maintained the service's backend API and CMS.",
+      "Worked on service for Amazon Alexa designed to promote customer engagement. Led engineering effort to expand service to 2 new markets, improved and maintained the service's backend API and CMS.",
     icon: React.createElement(FaAmazon),
     date: "Sep '20 - Oct '21",
   },
@@ -54,7 +53,7 @@ export const experiencesData = [
     title: "Graduated UC Santa Cruz",
     location: "Santa Cruz, CA",
     description:
-      "I graduated UC Santa Cruz with honors, with a BS in Computer Science, and a minor in Bioinformatics.",
+      "Graduated UC Santa Cruz with honors, with a BS in Computer Science, and a minor in Bioinformatics.",
     icon: React.createElement(LuGraduationCap),
     date: "Jun '20",
   },
@@ -70,26 +69,19 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Exo: NASA Exoplanet Visualization",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "3D data visualization web app that visualizes all of the exoplanets discovered by NASA. Allows users to compare the differences in data between groups of exoplanets in a 3D environment.",
+    tags: ["Javascript", "three.js", "WebGL", "HTML/CSS", "NASA Exoplanet API"],
+    imageUrl: exo,
   },
   {
-    title: "rmtDev",
+    title: "Spotifam",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
-  },
+      "Web app that enables users to create a collaborative playlist together to listen to. Developed as part of team of 6. Worked on UI with React and developed the app's 3D three.js visualization that runs while music plays.",
+    tags: ["React", "Javascript", "three.js"],
+    imageUrl: spotifam,
+  }
 ] as const;
 
 export const skillsData = [
@@ -103,10 +95,16 @@ export const skillsData = [
   "Next.js",
   "Node.js",
   "WebSocket",
+  "Spring",
   "AWS",
+  "EC2",
+  "DynamoDB",
+  "S3",
   "Tailwind CSS",
   "Framer Motion",
   "three.js",
   "Figma",
-  "Git"
+  "Git",
+  "npm"
+
 ] as const;

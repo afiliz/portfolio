@@ -21,13 +21,23 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className='mb-3'>
-      Hi there! My name is Adam and I enjoy building tech that positively impacts the lives of those who interact with my work. My interest with coding started with video games back in middle school, and I started my coding career by creating a choose-your-own adventure game in C++. I later discovered robotics and the coding aspects of it, and was hooked to programming ever since.
+      Hi there! My name is <span className='font-medium'>Adam</span>{" "}
+      and I enjoy building tech that <span className='italic'>positively impacts</span>{" "}
+      the lives of those who interact with my work. I started my coding journey by creating a choose-your-own-adventure game in C++.
+      I later discovered robotics and the coding aspects of it, and was{" "}
+      <span className='underline'>hooked</span> to programming{" "} ever since. 
+      Since then, I’ve graduated <span className='font-medium'>UC Santa Cruz</span> with a degree in <span className='font-medium'>Computer Science</span>, and worked as a professional software engineer for 2 years.
       </p>
       <p className='mb-3'>
-      Recently I’ve had the opportunity to work at the Esports media company Panda Global, as well as to develop the voice assistant Amazon Alexa. I enjoyed those roles thoroughly, as the work I did brought joy to many customers worldwide. I hope to continue positively impacting customer experiences and growing as a software engineer in my next role.
+      Recently I’ve had the opportunity to work at the Esports media
+      company <span className='font-medium'>Panda Global</span>,
+      as well as to develop the <span className='font-medium'>voice assistant Amazon Alexa</span>. 
+      I enjoyed those roles thoroughly, as the work I did brought joy to many customers <span className='font-medium'>worldwide</span>. 
+      I hope to continue improving customer experiences and
+      <span className='italic'> growing as a software engineer</span> in my next role.
       </p>
       <p className='mb-3'>
-      I’m currently seeking full time and contract software engineering positions based in the San Francisco Bay Area, New York City, Boston, and Los Angeles. Feel free to <a href="#contact" className='underline text-blue-600 hover:text-blue-800 visited:text-purple-600'>message me and get in touch!</a>
+      I’m currently seeking <span className='font-medium'>full time and contract</span> software engineering positions based in the <span className='italic'>San Francisco Bay Area, New York City, Boston, and Los Angeles</span>. Feel free to <a href="#contact" className='underline text-blue-600 hover:text-blue-800 visited:text-purple-600'>message me and get in touch!</a>
       </p>
     </motion.section>
   )

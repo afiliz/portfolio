@@ -30,8 +30,8 @@ export default function RootLayout({
         <ActiveSectionContextProvider>
           <Header />
           {children}
+            <Analytics />
         </ActiveSectionContextProvider>
-        <Analytics />
       </body>
     </html>
   )

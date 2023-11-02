@@ -70,6 +70,7 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Exo: NASA Exoplanet Visualization",
+    url: "https://afiliz.github.io/exo/exo.html",
     description:
       "3D data visualization web app that visualizes all of the exoplanets discovered by NASA. Allows users to compare the differences in data between groups of exoplanets in a 3D environment.",
     tags: ["Javascript", "three.js", "WebGL", "HTML/CSS", "NASA Exoplanet API"],
@@ -77,6 +78,7 @@ export const projectsData = [
   },
   {
     title: "Spotifam",
+    url: "https://github.com/Spotifam",
     description:
       "Web app that enables users to create a collaborative playlist together to listen to. Developed as part of team of 6. Worked on UI with React and developed the app's 3D three.js visualization that runs while music plays.",
     tags: ["React", "Javascript", "three.js"],

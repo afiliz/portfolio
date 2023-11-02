@@ -72,7 +72,7 @@ export default function Intro() {
         <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
         </Link>
 
-        <a className='group bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10' href="/Resume.pdf" download>Download Resume <HiDownload className='opacity-60 group-hover:translate-y-1 transition' /></a>
+        <a className='group bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10' href="/Adam_Filiz_Resume.pdf" download>Download Resume <HiDownload className='opacity-60 group-hover:translate-y-1 transition' /></a>
 
         <div className='flex flex-row gap-3'>
           <a className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10' href="https://linkedin.com/in/adam-filiz" target="_blank">

@@ -1,6 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Adam Filiz's Portfolio Website
+## About
+Hi there! My name is Adam Filiz, I'm a frontend-focused full stack software engineer who's passionate about building cool, impact-driven tech. From data visualizations to video games to web apps, I enjoy creating tech that helps people in their day to day lives.
+
+I built this website to showcase who I am as a software engineer, including what I've worked on in my career and in my spare time. I update it time to time to continue making it my own and keeping it up to date with what's going on in my professional life.
 
 ## Getting Started
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
@@ -32,3 +38,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Credits
+Thank you to ByteGrad for the amazing tutorial on building portfolio websites.

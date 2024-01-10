@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from '@/lib/hooks';
 
 export default function About() {
-  const { ref } = useSectionInView("About", 0.75);
+  const { ref } = useSectionInView("About", 0.5);
 
   return (
     <motion.section 
@@ -19,10 +19,12 @@ export default function About() {
       id="about"
       ref={ref}
     >
+      <div className="bg-[#b0f7bc] absolute top-[1rem] -z-10 right-[0rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[4rem] sm:w-[68.75rem]"></div>
+      <div className="bg-[#adc2ed] absolute top-[1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[4rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
       <SectionHeading>About me</SectionHeading>
       <p className='mb-3'>
       Hi there! My name is <span className='font-medium'>Adam</span>{" "}
-      and I enjoy building tech that <span className='italic'>positively impacts</span>{" "}
+      and I enjoy building tech that positively impacts{" "}
       the lives of those who interact with my work. I started my coding journey by creating a choose-your-own-adventure game in C++.
       I later discovered robotics and the coding aspects of it, and was{" "}
       <span className='underline'>hooked</span> to programming{" "} ever since. 
@@ -31,10 +33,10 @@ export default function About() {
       <p className='mb-3'>
       Recently I’ve had the opportunity to work at the Esports media
       company <span className='font-medium'>Panda Global</span>,
-      as well as to develop the <span className='font-medium'>voice assistant Amazon Alexa</span>. 
+      as well as to develop the <span className='font-medium'>voice assistant Alexa</span> at <span className='font-medium'>Amazon Lab126</span>. 
       I enjoyed those roles thoroughly, as the work I did brought joy to many customers <span className='font-medium'>worldwide</span>. 
       I hope to continue improving customer experiences and
-      <span className='italic'> growing as a software engineer</span> in my next role.
+       growing as a software engineer in my next role.
       </p>
       <p className='mb-3'>
       I’m currently seeking <span className='font-medium'>full time and contract</span> software engineering positions based in the <span className='italic'>San Francisco Bay Area, New York City, Boston, and Los Angeles</span>. Feel free to <a href="#contact" className='underline text-blue-600 hover:text-blue-800 visited:text-purple-600'>message me and get in touch!</a>

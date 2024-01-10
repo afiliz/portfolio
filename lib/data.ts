@@ -1,6 +1,8 @@
 import React from "react";
-import { FaReact, FaPython, FaAmazon } from "react-icons/fa";
+import { FaAmazon } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { SiFoodpanda } from "react-icons/si";
+import { TbNetwork } from "react-icons/tb";
 import exo from "@/public/exo.png";
 import spotifam from "@/public/spotifam.png";
 
@@ -35,22 +37,28 @@ export const links = [
 export const experiencesData = [
   {
     title: "Full Stack Software Engineer ",
+    company: "Panda Global",
+    companyLink: "https://panda.gg",
     location: "Remote",
     description:
       "Developed data visualization overlays for live tournaments of 30,000+ viewers. Built React-based dashboard used to control what is displayed on livestreams in real time.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(SiFoodpanda),
     date: "Jun '22 - Jan '23",
   },
   {
     title: "Software Development Engineer",
+    company: "Amazon Lab126",
+    companyLink: "https://www.amazon.jobs/en/teams/lab126",
     location: "Remote/Sunnyvale, CA",
     description:
-      "Worked on service for Amazon Alexa designed to promote customer engagement. Led engineering effort to expand service to 2 new markets, improved and maintained the service's backend API and CMS.",
+      "Worked on service for Amazon Alexa designed to promote customer engagement on 100+ million devices. Led engineering effort to expand service to 2 new markets, maintained and introduced new features for the service's backend API and CMS.",
     icon: React.createElement(FaAmazon),
     date: "Sep '20 - Oct '21",
   },
   {
     title: "Graduated UC Santa Cruz",
+    company: "",
+    companyLink: "https://www.ucsc.edu/",
     location: "Santa Cruz, CA",
     description:
       "Graduated UC Santa Cruz with honors, with a BS in Computer Science, and a minor in Bioinformatics.",
@@ -59,10 +67,12 @@ export const experiencesData = [
   },
   {
     title: "Software Development Intern",
+    company: "Riverbed Technology",
+    companyLink: "https://www.riverbed.com/",
     location: "Sunnyvale, CA",
     description:
       "Created a Python utility that automatically handles firmware updates for company's existing and new network hardware products.",
-    icon: React.createElement(FaPython),
+    icon: React.createElement(TbNetwork),
     date: "Jun '19 - Aug '19",
   },
 ] as const;

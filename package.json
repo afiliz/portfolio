@@ -33,6 +33,7 @@
     "typescript": "5.1.5"
   },
   "devDependencies": {
-    "@types/react-vertical-timeline-component": "^3.3.5"
+    "@types/react-vertical-timeline-component": "^3.3.5",
+    "babel-plugin-styled-components": "^2.1.4"
   }
 }

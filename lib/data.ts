@@ -3,8 +3,10 @@ import { FaAmazon } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import { SiFoodpanda } from "react-icons/si";
 import { TbNetwork } from "react-icons/tb";
-import exo from "@/public/exo.png";
+import { IoIosGitNetwork } from "react-icons/io";
+import exoRight from "@/public/exo-right.png";
 import spotifam from "@/public/spotifam.png";
+import getawaygames from "@/public/getawaygames.png";
 
 export const links = [
   {
@@ -36,8 +38,18 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Full Stack Software Engineer ",
-    company: "Panda Global",
+    title: "Software Lab Administrator",
+    company: "Arista Networks (Contract)",
+    companyLink: "https://www.arista.com/en/",
+    location: "Santa Clara, CA",
+    description:
+      "Streamline data center operations by installing and configuring software-driven networking devices. Develop internal tools using Python to enhance device install efficiency.",
+    icon: React.createElement(IoIosGitNetwork),
+    date: "April '24 - Present",
+  },
+  {
+    title: "Full Stack Software Engineer",
+    company: "Panda Global (Contract)",
     companyLink: "https://panda.gg",
     location: "Remote",
     description:
@@ -79,12 +91,20 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Escape Room Company Marketing Website ",
+    url: "",
+    description:
+      "Marketing website for the escape room company Get Away Games & Media. Allows users to view the available escape rooms and book services.",
+    tags: ["Typescript", "Next.js", "Tailwind CSS", "Sanity CMS"],
+    imageUrl: getawaygames,
+  },
+  {
     title: "Exo: NASA Exoplanet Visualization",
     url: "https://afiliz.github.io/exo/exo.html",
     description:
       "3D data visualization web app that visualizes all of the exoplanets discovered by NASA. Allows users to compare the differences in data between groups of exoplanets in a 3D environment.",
     tags: ["Javascript", "three.js", "WebGL", "HTML/CSS", "NASA Exoplanet API"],
-    imageUrl: exo,
+    imageUrl: exoRight,
   },
   {
     title: "Spotifam",
@@ -107,7 +127,7 @@ export const skillsData = [
   "Next.js",
   "Node.js",
   "WebSocket",
-  "Spring",
+  "Spring Boot",
   "AWS",
   "EC2",
   "DynamoDB",
@@ -117,6 +137,7 @@ export const skillsData = [
   "three.js",
   "Figma",
   "Git",
-  "npm"
+  "npm",
+  "Sanity CMS"
 
 ] as const;

@@ -16,6 +16,18 @@ export default function Intro() {
   return (
     // section tags are better to make everything related to each other (semantically)
     <section ref={ref} id="home" className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
+      <motion.div
+        className="-z-10"
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        transition={{
+          type: "tween",
+          duration: 0.2,
+        }}
+        >
+        <div className="bg-[#b0f7bc] absolute top-[1rem] -z-10 right-[0rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[4rem] sm:w-[68.75rem]"></div>
+        <div className="bg-[#adc2ed] absolute top-[1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[4rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
+      </motion.div>
       <div className='flex items-center justify-center'>
         <div className='relative'>
          <motion.div

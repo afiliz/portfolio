@@ -19,8 +19,7 @@ export default function About() {
       id="about"
       ref={ref}
     >
-      <div className="bg-[#b0f7bc] absolute top-[1rem] -z-10 right-[0rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[4rem] sm:w-[68.75rem]"></div>
-      <div className="bg-[#adc2ed] absolute top-[1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[4rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
+      
       <SectionHeading>About me</SectionHeading>
       <p className='mb-3'>
       Hi there! My name is <span className='font-medium'>Adam</span>{" "}

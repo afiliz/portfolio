@@ -4,9 +4,10 @@ import { LuGraduationCap } from "react-icons/lu";
 import { SiFoodpanda } from "react-icons/si";
 import { TbNetwork } from "react-icons/tb";
 import { IoIosGitNetwork } from "react-icons/io";
-import exoRight from "@/public/exo-right.png";
+import exo from "@/public/exo.png";
 import spotifam from "@/public/spotifam.png";
 import getawaygames from "@/public/getawaygames.png";
+import foodDetection from "@/public/food-detection.png";
 
 export const links = [
   {
@@ -99,12 +100,20 @@ export const projectsData = [
     imageUrl: getawaygames,
   },
   {
+    title: "AI Recipe Detector and Recipe Generator",
+    url: "https://ai-ingredient-detection.vercel.app/",
+    description:
+      "AI-powered web application that analyzes uploaded images to identify ingredients and generates recipe recommendations.", 
+    tags: ["Typescript", "React", "Next.js", "ChatGPT Vision API", "Tailwind CSS"],
+    imageUrl: foodDetection,
+  },
+  {
     title: "Exo: NASA Exoplanet Visualization",
     url: "https://afiliz.github.io/exo/exo.html",
     description:
       "3D data visualization web app that visualizes all of the exoplanets discovered by NASA. Allows users to compare the differences in data between groups of exoplanets in a 3D environment.",
     tags: ["Javascript", "three.js", "WebGL", "HTML/CSS", "NASA Exoplanet API"],
-    imageUrl: exoRight,
+    imageUrl: exo,
   },
   {
     title: "Spotifam",

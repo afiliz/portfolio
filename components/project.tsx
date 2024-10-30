@@ -6,6 +6,7 @@ import { projectsData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
+import { BsArrowRight } from "react-icons/bs";
 
 type ProjectProps = typeof projectsData[number];
 
@@ -27,20 +28,26 @@ export default function Project({title, url, description, tags, imageUrl}:
         scale: scaleProgress,
         opacity: scrollYProgress,
       }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      className="group mb-14 sm:mb-8 last:mb-0"
     >
       <section
-        className="relative bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:max-w-[47rem] sm:pr-8 sm:h-[20rem] rounded-lg hover:bg-gray-200 transition">
+        className="relative bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:max-w-[47rem] sm:pr-8 max-h-[22rem] rounded-lg hover:bg-gray-200 transition">
         <div className='pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[60%] flex flex-col h-full sm:group-even:ml-[18rem]'>
-          <h3 className='text-2xl font-semibold'><a className="hover:underline" target="_blank" href={url}>{title}</a></h3>
-          <p className='mt-2 leading-relaxed text-gray-700'>{description}</p>
+          <h3 className='text-2xl font-semibold'><a className="hover:underline" target="_blank">{title}</a></h3>
+          <p className='mt-2 mb-2 leading-relaxed text-gray-700'>{description}</p>
           <ul className='flex flex-wrap mt-4 gap-2 sm:mt-auto'>
             {tags.map((tag, index) => (
               <li className='bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full' key={index}>{tag}</li>
             ))}
           </ul>
+          <div className="flex">
+            <a className='bg-white text-gray-700 mt-4 mb-4 p-4 w-48 flex items-center justify-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10' href={url} target="_blank">
+            Link to Project
+            <BsArrowRight className='opacity-70 transition' />
+            </a>
+          </div>
         </div>
-        <Image src={imageUrl} alt={description} quality={95} className='absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:right-[initial] 
+        <Image src={imageUrl} alt={description} quality={95} className='absolute hidden sm:block bottom-0 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:right-[initial] 
         transition
         group-hover:scale-[1.04]
         group-hover:-translate-x-3 

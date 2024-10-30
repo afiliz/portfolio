@@ -10,7 +10,7 @@ export default function About() {
 
   return (
     <motion.section 
-      className='mb-20 max-w-[45rem] text-center leading-8 sm:mb-28 scroll-mt-28'
+      className='mb-20 max-w-[45rem] text-center sm:text-left leading-8 sm:mb-28 scroll-mt-28'
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
@@ -34,11 +34,11 @@ export default function About() {
       company <span className='font-medium'>Panda Global</span>,
       as well as to develop the <span className='font-medium'>voice assistant Alexa</span> at <span className='font-medium'>Amazon Lab126</span>. 
       I enjoyed those roles thoroughly, as the work I did brought joy to many customers <span className='font-medium'>worldwide</span>. 
-      I hope to continue improving customer experiences and
-       growing as a software engineer in my next role.
+      I'm currently working as a Lab Admin at the networking company Arista Networks, but am seeking to move back into a software-focused role, 
+      where I can continue improving customer experiences and growing as a software engineer.
       </p>
       <p className='mb-3'>
-      I’m currently seeking <span className='font-medium'>full time and contract</span> software engineering positions based in the <span className='italic'>San Francisco Bay Area, New York City, Boston, and Los Angeles</span>. Feel free to <a href="#contact" className='underline text-blue-600 hover:text-blue-800 visited:text-purple-600'>message me and get in touch!</a>
+      I’m currently seeking <span className='font-medium'>full time and contract</span> software engineering positions based in the <span className='italic'>San Francisco Bay Area, New York City, Boston, and Los Angeles</span>. Feel free to <a href="mailto:filizadam@gmail.com" className='underline text-blue-600 hover:text-blue-800 visited:text-purple-600'>message me and get in touch!</a>
       </p>
     </motion.section>
   )

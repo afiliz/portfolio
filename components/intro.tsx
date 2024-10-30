@@ -45,10 +45,10 @@ export default function Intro() {
             quality='95'
             priority={true}
             src={profile}
-            className='h-32 w-32 sm:h-36 sm:w-36 rounded-full object-cover border-[0.35rem] border-white shadow-xl'/>
+            className='h-32 w-32 sm:h-48 sm:w-48 rounded-full object-cover border-[0.35rem] border-white shadow-xl'/>
          </motion.div>
           <motion.span
-          className='absolute bottom-0 right-0 text-4xl'
+          className='absolute bottom-0 right-0 text-5xl'
             initial={{ opacity: 0, scale: 0}}
             animate={{ opacity: 1, scale: 1}}
             transition={{
@@ -68,7 +68,7 @@ export default function Intro() {
       >
         Hello there, <span className="font-bold"> I'm Adam.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">2 years</span> of experience. I develop <span className="italic">exceptional and impactful</span> <span className="font-bold">sites & apps</span>. 
+        <span className="font-bold">2 years</span> of experience. I can help you develop <span className="italic">exceptional</span>, <span className="italic"> impactful</span> <span className="font-bold">sites & apps</span>. 
         {/* My focus is{" "}
         <span className="underline">React, (Next.js)</span>. */}
       </motion.h1>

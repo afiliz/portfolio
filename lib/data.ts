@@ -45,7 +45,7 @@ export const experiencesData = [
     companyLink: "https://www.apple.com",
     location: "Santa Clara, CA",
     description:
-      "Developed custom automation tooling and on-device scrapers to launch 50+ feature evaluations across Apple Intelligence projects (including Spotlight on macOS 26 below). Worked on infrastructure to allow access to evaluation results and insights for data scientists across Apple.",
+      "Developed custom automation tooling and on-device scrapers to launch 50+ feature evaluations across Apple Intelligence projects (including Spotlight on macOS 26). Worked on infrastructure to allow access to evaluation results and insights for data scientists across Apple.",
     icon: React.createElement(FaApple),
     date: "April '24 - Present",
   },

@@ -22,23 +22,14 @@ export default function About() {
       
       <SectionHeading>About me</SectionHeading>
       <p className='mb-3'>
-      Hi there! My name is <span className='font-medium'>Adam</span>{" "}
-      and I enjoy building tech that positively impacts{" "}
-      the lives of those who interact with my work. I started my coding journey by creating a choose-your-own-adventure game in C++.
-      I later discovered robotics and the coding aspects of it, and was{" "}
-      <span className='underline'>hooked</span> to programming{" "} ever since. 
-      Since then, I’ve graduated <span className='font-medium'>UC Santa Cruz</span> with a degree in <span className='font-medium'>Computer Science</span>, and worked as a professional software engineer for 2 years.
+      Hello there! My name is <span className='font-medium'>Adam</span>, I'm a full stack software engineer from the <span className='font-medium'>San Francisco Bay Area</span>.
+      I'm currently working as a Backend Engineer at <span className='font-medium'>Apple</span>, where I work the tech behind on-device evaluations that help improve the quality of <span className='font-medium'>Apple Intelligence</span>.
       </p>
       <p className='mb-3'>
-      Recently I’ve had the opportunity to work at the Esports media
-      company <span className='font-medium'>Panda Global</span>,
-      as well as to develop the <span className='font-medium'>voice assistant Alexa</span> at <span className='font-medium'>Amazon Lab126</span>. 
-      I enjoyed those roles thoroughly, as the work I did brought joy to many customers <span className='font-medium'>worldwide</span>. 
-      I'm currently working as a Lab Admin at the networking company Arista Networks, but am seeking to move back into a software-focused role, 
-      where I can continue improving customer experiences and growing as a software engineer.
+      I create software that makes an impact by building user-centered frontend interfaces following <span className='font-medium'>UI/UX</span> best practices, <span className='font-medium'>automation</span> tools that streamline operations, and interactive applications that solve real business problems. With experience spanning from developing Amazon Alexa to building out dashboards powering live esports broadcasts, I bring a unique perspective that combines technical depth with real-world problem solving.
       </p>
       <p className='mb-3'>
-      I’m currently seeking <span className='font-medium'>full time and contract</span> software engineering positions based in the <span className='italic'>San Francisco Bay Area, New York City, Boston, and Los Angeles</span>. Feel free to <a href="mailto:filizadam@gmail.com" className='underline text-blue-600 hover:text-blue-800 visited:text-purple-600'>message me and get in touch!</a>
+      While I'm proud to have worked at Apple on my current contract, it is coming to a close soon. I’m currently seeking <span className='font-medium'>full time and contract</span> software engineering positions based in the <span className='italic'>San Francisco Bay Area, New York City, Boston, and San Diego</span>. Feel free to <a href="mailto:filizadam@gmail.com" className='underline text-blue-600 hover:text-blue-800 visited:text-purple-600'>message me and get in touch!</a>
       </p>
     </motion.section>
   )

@@ -1,9 +1,10 @@
 import React from "react";
-import { FaAmazon } from "react-icons/fa";
+import { FaAmazon, FaApple } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import { SiFoodpanda } from "react-icons/si";
 import { TbNetwork } from "react-icons/tb";
 import { IoIosGitNetwork } from "react-icons/io";
+import { CgWebsite } from "react-icons/cg";
 import exo from "@/public/exo.png";
 import spotifam from "@/public/spotifam.png";
 import getawaygames from "@/public/getawaygames.png";
@@ -39,14 +40,34 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Backend Engineer",
+    company: "Apple (TEKsystems Contract)",
+    companyLink: "https://www.apple.com",
+    location: "Santa Clara, CA",
+    description:
+      "Developed custom automation tooling and on-device scrapers to launch 50+ feature evaluations across Apple Intelligence projects (including Spotlight on macOS 26 below). Worked on infrastructure to allow access to evaluation results and insights for data scientists across Apple.",
+    icon: React.createElement(FaApple),
+    date: "April '24 - Present",
+  },
+  {
     title: "Software Lab Administrator",
     company: "Arista Networks (Contract)",
     companyLink: "https://www.arista.com/en/",
     location: "Santa Clara, CA",
     description:
-      "Streamline data center operations by installing and configuring software-driven networking devices. Develop internal tools using Python to enhance device install efficiency.",
+      "Streamlined data center operations by installing and configuring software-driven networking devices. Developed internal tools using Python to enhance device install efficiency.",
     icon: React.createElement(IoIosGitNetwork),
-    date: "April '24 - Present",
+    date: "April '24 - December '24",
+  },
+  {
+    title: "Full Stack Developer",
+    company: "Self-Employed Contractor",
+    companyLink: "https://www.adamfiliz.com",
+    location: "Remote",
+    description:
+      "Developed custom marketing websites with CMS integration, allowing client to manage content of all website components independently. Built a WordPress site for an escape room company that achieved 2,000+ monthly visitors.",
+    icon: React.createElement(CgWebsite),
+    date: "September '23 - September '24",
   },
   {
     title: "Full Stack Software Engineer",
@@ -56,7 +77,7 @@ export const experiencesData = [
     description:
       "Developed data visualization overlays for live tournaments of 30,000+ viewers. Built React-based dashboard used to control what is displayed on livestreams in real time.",
     icon: React.createElement(SiFoodpanda),
-    date: "Jun '22 - Jan '23",
+    date: "June '22 - January '23",
   },
   {
     title: "Software Development Engineer",
@@ -66,7 +87,7 @@ export const experiencesData = [
     description:
       "Worked on service for Amazon Alexa designed to promote customer engagement on 100+ million devices. Led engineering effort to expand service to 2 new markets, maintained and introduced new features for the service's backend API and CMS.",
     icon: React.createElement(FaAmazon),
-    date: "Sep '20 - Oct '21",
+    date: "September '20 - October '21",
   },
   {
     title: "Graduated UC Santa Cruz",
@@ -76,7 +97,7 @@ export const experiencesData = [
     description:
       "Graduated UC Santa Cruz with honors, with a BS in Computer Science, and a minor in Bioinformatics.",
     icon: React.createElement(LuGraduationCap),
-    date: "Jun '20",
+    date: "June '20",
   },
   {
     title: "Software Development Intern",
@@ -86,7 +107,7 @@ export const experiencesData = [
     description:
       "Created a Python utility that automatically handles firmware updates for company's existing and new network hardware products.",
     icon: React.createElement(TbNetwork),
-    date: "Jun '19 - Aug '19",
+    date: "June '19 - August '19",
   },
 ] as const;
 
@@ -131,6 +152,7 @@ export const skillsData = [
   "Java",
   "React",
   "TypeScript",
+  "Shell Scripting",
   "HTML",
   "CSS",
   "Next.js",

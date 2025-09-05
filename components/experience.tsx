@@ -12,6 +12,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css/navigation';
+import { motion } from 'framer-motion';
 
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
@@ -20,11 +21,36 @@ import PandaStream from "@/public/panda_stream.png";
 import PandaTwitter from "@/public/panda_twitter.png";
 import PandaVS from "@/public/panda_vs.png";
 
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 100
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.2,
+    }
+  },
+}
+
 export default function Experience() {
   const { ref } = useSectionInView("Experience", 0.5);
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-28">
+    // <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-28">
+    <motion.section 
+      id="contact"
+      ref={ref}
+      className='scroll-mt-28 mb-28 sm:mb-28'
+      variants={fadeInAnimationVariants}
+      initial="initial"
+      whileInView="animate"
+      viewport={{
+        once: true,
+      }}
+    >
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor="#e0e0e0">
         {experiencesData.map((item, index) => (
@@ -96,6 +122,6 @@ export default function Experience() {
           </React.Fragment>
         ))}
       </VerticalTimeline>
-    </section>
+    </motion.section>
   );
 }

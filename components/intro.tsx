@@ -8,13 +8,13 @@ import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from "react-icons/bs"
 import { HiDownload } from "react-icons/hi"
 import { FaGithubSquare } from 'react-icons/fa';
+import { FaApple } from "react-icons/fa";
 import { useSectionInView } from '@/lib/hooks';
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
 
   return (
-    // section tags are better to make everything related to each other (semantically)
     <section ref={ref} id="home" className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
       <motion.div
         className="-z-10"
@@ -62,16 +62,25 @@ export default function Intro() {
           </motion.span>
         </div>
       </div>
-      <motion.h1 className='mb-10 mt-6 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
+      <motion.h1 className='mb-5 mt-6 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
       initial={{opacity: 0, y: 100}}
       animate={{opacity: 1, y: 0}}
       >
-        Hello there, <span className="font-bold"> I'm Adam.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">2 years</span> of experience. I can help you develop <span className="italic">exceptional</span>, <span className="italic"> impactful</span> <span className="font-bold">sites & apps</span>. 
+        Hi there, <span className="font-bold"> I'm Adam.</span> I'm a{" "}
+        <span className="font-bold">Full Stack Engineer</span> with{" "}
+        <span className="font-bold">4 years</span> of experience.
         {/* My focus is{" "}
         <span className="underline">React, (Next.js)</span>. */}
       </motion.h1>
+      <motion.h3 className='mb-10 px-4 text-lg font-medium !leading-[1.5] sm:text-2xl'
+      initial={{opacity: 0, y: 100}}
+      animate={{opacity: 1, y: 0}}
+      transition={{
+        delay: 0.05,
+      }}
+      >
+        Currently working at <span className="font-bold">Apple</span> | ex-Amazon engineer
+      </motion.h3>
 
       <motion.div className='flex flex-col items-center justify-center gap-3 px-4 text-lg font-medium sm:flex-row'
         initial={{ opacity: 0, y: 100}}

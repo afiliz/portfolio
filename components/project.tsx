@@ -4,15 +4,15 @@
 
 import { projectsData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 
 type ProjectProps = typeof projectsData[number];
 
-export default function Project({title, url, description, tags, imageUrl}: 
+export default function Project({title, url, description, tags, imageUrl}:
   ProjectProps) {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null!);
   const { scrollYProgress} = useScroll({
     target: ref,
     offset: ["0 1", "1.33 1"]
@@ -20,6 +20,12 @@ export default function Project({title, url, description, tags, imageUrl}:
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]); // goes from 0 to 1, but starts from 0.5 scale to 1
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]); // goes from 0 to 1, but starts from 0.5 scale to 1
   
+  const handleProjectClick = () => {
+    if (title === "Escape Room Company Marketing Website ") {
+      alert("This website has been taken down by the original client. Please contact me for access to a backup of the website.");
+    }
+  };
+
   return (
     // could use article tag if taking section and could put it in a new context
     <motion.div
@@ -41,25 +47,39 @@ export default function Project({title, url, description, tags, imageUrl}:
             ))}
           </ul>
           <div className="flex">
-            <a className='bg-white text-gray-700 mt-4 mb-4 p-4 w-48 flex items-center justify-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10' href={url} target="_blank">
-            Link to Project
-            <BsArrowRight className='opacity-70 transition' />
-            </a>
+          {title === "Escape Room Company Marketing Website " ? (
+              <button
+                className='bg-white text-gray-700 mt-4 mb-4 p-4 w-48 flex items-center justify-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10'
+                onClick={handleProjectClick}
+              >
+                Link to Project
+                <BsArrowRight className='opacity-70 transition' />
+              </button>
+            ) : (
+              <a
+                className='bg-white text-gray-700 mt-4 mb-4 p-4 w-48 flex items-center justify-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10'
+                href={url}
+                target='_blank'
+              >
+                Link to Project
+                <BsArrowRight className='opacity-70 transition' />
+              </a>
+            )}
           </div>
         </div>
-        <Image src={imageUrl} alt={description} quality={95} className='absolute hidden sm:block bottom-0 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:right-[initial] 
+        <Image src={imageUrl} alt={description} quality={95} className='absolute hidden sm:block bottom-0 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:right-[initial]
         transition
         group-hover:scale-[1.04]
-        group-hover:-translate-x-3 
-        group-hover:translate-y-3 
-        group-hover:-rotate-2 
+        group-hover:-translate-x-3
+        group-hover:translate-y-3
+        group-hover:-rotate-2
         
-        group-even:group-hover:translate-x-3 
-        group-even:group-hover:translate-y-3 
-        group-even:group-hover:rotate-2 
+        group-even:group-hover:translate-x-3
+        group-even:group-hover:translate-y-3
+        group-even:group-hover:rotate-2
         
         group-even:-left-40 '/>
       </section>
     </motion.div>
   );
-} 
+}

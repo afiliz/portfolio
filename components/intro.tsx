@@ -2,17 +2,31 @@
 
 import Image from 'next/image'
 import profile from "@/public/professional_profile.jpg";
-import React from 'react'
-import { motion } from "framer-motion";
+import React, { useEffect } from 'react'
+import { motion, useAnimate } from "framer-motion";
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from "react-icons/bs"
 import { HiDownload } from "react-icons/hi"
 import { FaGithubSquare } from 'react-icons/fa';
-import { FaApple } from "react-icons/fa";
 import { useSectionInView } from '@/lib/hooks';
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
+  const [scope, animate] = useAnimate();
+
+  useEffect(() => {
+    const animateHand = async () => {
+      await animate(scope.current, { opacity: 1, scale: 1 }, { duration: 0.5, type: "spring", stiffness: 125, delay: 0.1 });
+
+      while (true) {
+        await animate(scope.current, { rotate: [0, 14, -8, 14, -8, 0] }, { duration: 1, ease: "easeInOut" });
+        await new Promise(resolve => setTimeout(resolve, 2500)); // wait for 2.5 seconds
+      }
+    };
+
+    animateHand();
+  }, [animate, scope]);
+
 
   return (
     <section ref={ref} id="home" className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
@@ -49,14 +63,8 @@ export default function Intro() {
          </motion.div>
           <motion.span
           className='absolute bottom-0 right-0 text-5xl'
-            initial={{ opacity: 0, scale: 0}}
-            animate={{ opacity: 1, scale: 1}}
-            transition={{
-              type: 'spring',
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7
-            }}
+            ref={scope}
+            initial={{ opacity: 0, scale: 0 }}
           >
             👋
           </motion.span>

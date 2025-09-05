@@ -28,9 +28,10 @@ const fadeInAnimationVariants = {
   },
   animate: {
     opacity: 1,
-    y: 0,
+    y: 40,
     transition: {
-      delay: 0.2,
+      duration: 0.8,
+      delay: 0.3,
     }
   },
 }
@@ -39,11 +40,10 @@ export default function Experience() {
   const { ref } = useSectionInView("Experience", 0.5);
 
   return (
-    // <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-28">
     <motion.section 
-      id="contact"
+      id="experience"
       ref={ref}
-      className='scroll-mt-28 mb-28 sm:mb-28'
+      className='scroll-mt-40 mb-28 sm:mb-28 sm:mt-16'
       variants={fadeInAnimationVariants}
       initial="initial"
       whileInView="animate"
@@ -89,7 +89,7 @@ export default function Experience() {
               
               {item.company == "Panda Global (Contract)" && (
                 <div className="">
-                  <Swiper navigation={true} modules={[Navigation]} className="mySwiper w-[15rem] sm:w-[35rem] md:w-[25rem]">
+                  <Swiper navigation={true} modules={[Navigation]} className="mySwiper w-[22rem] sm:w-[35rem] md:w-[25rem]">
                     <SwiperSlide>
                       <div className="flex flex-col justify-center">
                         <img className="h-[15rem] object-contain" src={PandaStream.src} alt="Screenshot of Panda web-based graphics I developed to show statistics during tournaments" />
